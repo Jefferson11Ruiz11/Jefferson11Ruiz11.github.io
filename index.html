@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jefferson Hernando | Portafolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(135deg, #60a5fa 0%, #a855f7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-[#0b0f19] text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-slate-800/60 px-6 py-4">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <a href="#" class="font-bold text-lg tracking-wider text-white">JH<span class="text-indigo-400">.dev</span></a>
+      <div class="space-x-6 text-sm font-medium text-slate-400">
+        <a href="#sobre-mi" class="hover:text-indigo-400 transition">Sobre mí</a>
+        <a href="#skills" class="hover:text-indigo-400 transition">Habilidades</a>
+        <a href="#proyectos" class="hover:text-indigo-400 transition">Proyectos</a>
+        <a href="#contacto" class="text-indigo-400 hover:text-indigo-300 transition">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="sobre-mi" class="max-w-5xl mx-auto px-6 pt-24 pb-16 text-center md:text-left md:flex items-center justify-between gap-12">
+    <div class="flex-1 space-y-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-medium">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Disponible para nuevos proyectos y oportunidades
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+        Hola, soy <span class="gradient-text">Jefferson Hernando</span>
+      </h1>
+      <p class="text-lg text-slate-400 max-w-xl leading-relaxed">
+        Estudiante de Ingeniería apasionado por el desarrollo de software, la creación de herramientas digitales y la optimización de procesos tecnológicos.
+      </p>
+      <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+        <a href="#proyectos" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-3 rounded-xl transition shadow-lg shadow-indigo-600/20">
+          Explorar Proyectos
+        </a>
+        <a href="https://github.com/Jefferson11Ruiz11" target="_blank" class="border border-slate-700 hover:border-slate-500 bg-slate-900/50 text-slate-300 font-semibold px-6 py-3 rounded-xl transition flex items-center gap-2">
+          <i data-lucide="github" class="w-4 h-4"></i> GitHub
+        </a>
+      </div>
+    </div>
+    <div class="mt-10 md:mt-0 flex justify-center">
+      <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-1 shadow-2xl shadow-indigo-500/10">
+        <div class="w-full h-full bg-[#0f172a] rounded-[14px] flex items-center justify-center text-5xl font-black text-indigo-400 border border-white/5">
+          JH
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills" class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+      <i data-lucide="cpu" class="text-indigo-400 w-6 h-6"></i> Habilidades Técnicas
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition text-center">
+        <p class="font-semibold text-white">Frontend</p>
+        <p class="text-xs text-slate-400 mt-1">HTML, CSS, JS, Tailwind</p>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition text-center">
+        <p class="font-semibold text-white">Backend</p>
+        <p class="text-xs text-slate-400 mt-1">Node.js, Python, Java</p>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition text-center">
+        <p class="font-semibold text-white">Bases de Datos</p>
+        <p class="text-xs text-slate-400 mt-1">MySQL, PostgreSQL, MongoDB</p>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition text-center">
+        <p class="font-semibold text-white">Herramientas</p>
+        <p class="text-xs text-slate-400 mt-1">Git, GitHub, VS Code</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="proyectos" class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+      <i data-lucide="folder-git-2" class="text-indigo-400 w-6 h-6"></i> Proyectos Destacados
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Proyecto 1 -->
+      <div class="bg-slate-900/50 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-6 transition flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Aplicación Web</span>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-500 group-hover:text-indigo-400 transition"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-300 transition">Sistema de Gestión / Proyecto Demo</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Plataforma diseñada para optimizar registros y automatizar flujos de trabajo con persistencia de datos.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded">JavaScript</span>
+            <span class="text-xs bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded">Tailwind</span>
+            <span class="text-xs bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded">SQL</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 text-sm font-semibold">
+          <a href="#" class="text-indigo-400 hover:text-indigo-300">Ver Demo →</a>
+          <a href="https://github.com/Jefferson11Ruiz11" class="text-slate-400 hover:text-slate-200">Repositorio</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="bg-slate-900/50 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-6 transition flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">API / Backend</span>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-500 group-hover:text-indigo-400 transition"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-300 transition">API REST & Microservicios</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Servicio backend modular con autenticación, endpoints seguros y consultas optimizadas a base de datos.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded">Node.js</span>
+            <span class="text-xs bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded">Express</span>
+            <span class="text-xs bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 text-sm font-semibold">
+          <a href="#" class="text-indigo-400 hover:text-indigo-300">Documentación →</a>
+          <a href="https://github.com/Jefferson11Ruiz11" class="text-slate-400 hover:text-slate-200">Repositorio</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacto" class="max-w-5xl mx-auto px-6 py-16 text-center">
+    <div class="bg-gradient-to-b from-slate-900/80 to-slate-950 border border-slate-800 rounded-3xl p-8 sm:p-12">
+      <h2 class="text-3xl font-bold text-white mb-3">¿Hablamos de un proyecto?</h2>
+      <p class="text-slate-400 max-w-md mx-auto mb-6 text-sm">
+        Siempre estoy abierto a discutir nuevas oportunidades o colaboraciones.
+      </p>
+      <a href="mailto:tu-correo@ejemplo.com" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg shadow-indigo-600/20">
+        <i data-lucide="mail" class="w-4 h-4"></i> Enviarme un correo
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/60 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 Jefferson Hernando. Construido y alojado en GitHub Pages.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
